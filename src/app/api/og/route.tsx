@@ -65,14 +65,14 @@ export const GET = async (req: NextRequest) => {
               <div tw="flex items-center">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="https://github.com/bonabrian.png?size=48"
+                  src="https://github.com/fahlisaputra.png?size=48"
                   width="48"
                   height="48"
                   alt="author"
                   tw="rounded-full mr-4"
                 />
                 <p style={{ fontFamily: 'Poppins-Bold' }} tw="mb-1">
-                  Bona Brian Siagian
+                  Muhammad Fahli Saputra
                 </p>
               </div>
             </div>

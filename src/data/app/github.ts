@@ -3,7 +3,7 @@ import type { GithubAccount } from '@/types/github'
 
 export const GITHUB_ACCOUNTS: GithubAccount[] = [
   {
-    username: 'bonabrian',
+    username: 'fahlisaputra',
     endpoint: '/api/github?type=personal',
     token: env.GITHUB_READ_USER_TOKEN_PERSONAL,
     type: 'personal',

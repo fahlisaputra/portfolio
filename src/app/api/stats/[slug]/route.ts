@@ -13,7 +13,7 @@ export const GET = async (
     const { slug } = params
     switch (slug) {
       case 'profile':
-        const userApiUrl = 'https://api.github.com/users/bonabrian'
+        const userApiUrl = 'https://api.github.com/users/fahlisaputra'
         const user: any = await fetcher(userApiUrl, {
           next: { revalidate: 600 },
         })

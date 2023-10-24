@@ -1,26 +1,26 @@
 export const BASE_URL =
   process.env.NODE_ENV === 'production'
-    ? 'https://bonabrian.com'
+    ? 'https://fah.li'
     : 'http://localhost:3000'
 
 export const siteConfig = {
-  name: "bonabrian's portfolio",
-  title: 'Bona Brian Siagian',
+  name: "Fahli's Personal Website",
+  title: 'Muhammad Fahli Saputra',
   description:
-    'Passionate Full-stack engineer who focused on solving problems with digital products.',
+    'A Fullstack Software Engineer who loves code and learn new things',
   author: {
-    name: 'Bona Brian Siagian',
-    url: 'https://bonabrian.com',
-    email: 'bonabrian.dev@gmail.com',
-    github: 'https://github.com/bonabrian',
-    linkedIn: 'https://www.linkedin.com/in/bonabrian',
+    name: 'Muhammad Fahli Saputra',
+    url: 'https://fah.li',
+    email: 'saputra@fahli.net',
+    github: 'https://github.com/fahlisaputra',
+    linkedIn: 'https://www.linkedin.com/in/fahlisaputra',
     avatar:
-      'https://res.cloudinary.com/dg48wbt00/image/upload/v1695023059/avatar.jpg',
-    twitter: '@bonabrian_',
+      'https://res.cloudinary.com/dyytaftx5/image/upload/v1698027043/vg6mlvhg7w7uodpu86rp.jpg',
+    twitter: '@fahlisptr',
   },
   keywords: [
-    'bonabrian',
-    'Bona Brian Siagian',
+    'fahlisaputra',
+    'Muhammad Fahli Saputra',
     'developer',
     'portfolio',
     'developer portfolio website',

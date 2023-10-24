@@ -10,7 +10,6 @@ import {
 import Analytics from '@/components/analytics'
 import Footer from '@/components/footer'
 import Navigation from '@/components/navigation'
-import NowPlaying from '@/components/now-playing'
 import Providers from '@/components/providers'
 import { DEFAULT_METADATA, seo } from '@/data/meta'
 import cn from '@/lib/cn'
@@ -62,7 +61,6 @@ const RootLayout = ({ children }: RootLayoutProps) => {
             <main>{children}</main>
             <Footer />
             <GuestbookWidgetButton />
-            <NowPlaying />
           </div>
           <Analytics />
         </Providers>

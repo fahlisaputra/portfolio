@@ -34,30 +34,18 @@ interface Experience {
 export const experiences: Experience[] = [
   {
     organization: {
-      name: 'Investree',
+      name: 'PT Hafdzamedia Teknologi Aplikasi',
       logo: '/static/images/resume/investree.png',
-      url: 'https://investree.id',
+      url: 'https://hafdzamedia.biz.id',
     },
-    role: 'Full-stack Engineer',
-    date: 'November 2020 - Present',
+    role: 'Senior Fullstack Software Engineer',
+    date: 'July 2023 - Present',
     stacks: [
-      {
-        name: 'Spring',
-        backgroundColor: 'rgba(109, 179, 63, 0.3)',
-        color: '#6DB33F',
-        icon: <Spring className={cn('h-4 w-4')} />,
-      },
       {
         name: 'Kotlin',
         backgroundColor: 'rgba(127, 82, 255, 0.3)',
         color: '#7F52FF',
         icon: <Kotlin className={cn('h-4 w-4')} />,
-      },
-      {
-        name: 'Vue',
-        backgroundColor: 'rgba(79, 192, 141, 0.3)',
-        color: '#4FC08D',
-        icon: <VueJs className={cn('h-4 w-4')} />,
       },
       {
         name: 'Javascript',
@@ -76,13 +64,7 @@ export const experiences: Experience[] = [
         backgroundColor: 'rgba(119, 123, 180, 0.3)',
         color: '#777BB4',
         icon: <PHP className={cn('h-4 w-4')} />,
-      },
-      {
-        name: 'RabbitMQ',
-        backgroundColor: 'rgba(255, 102, 0, 0.3)',
-        color: '#FF6600',
-        icon: <RabbitMq className={cn('h-4 w-4')} />,
-      },
+      }
     ],
     accomplishments: [
       'Designed, developed, and maintained high-performance, robust, and scalable server-side applications using Kotlin (Spring) for the back-end, PHP (Laravel) for legacy systems, and JavaScript (Vue) for front-end development.',

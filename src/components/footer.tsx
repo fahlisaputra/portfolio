@@ -1,5 +1,6 @@
 import { footerIconLinks, footerLinks, siteConfig } from '@/data/app'
 import cn from '@/lib/cn'
+import NowPlaying from '@/components/now-playing'
 
 import { Container, Link } from './ui'
 
@@ -7,6 +8,7 @@ const Footer = () => {
   return (
     <footer className={cn('bg-pattern mb-8 mt-24 pt-16 text-sm')}>
       <Container>
+        <NowPlaying />
         <nav
           className={cn(
             'mb-4 flex flex-col justify-between gap-6',
@@ -50,11 +52,14 @@ const Footer = () => {
           </div>
         </nav>
         <div className={cn('mt-4')}>
-          <div className={cn('flex items-center space-x-2 py-8')}>
+          <div className={cn('flex items-center space-x-2 pt-2 pb-1')}>
             <div>Copyright {`© 2022 - ${new Date().getFullYear()}`}</div>
             <Link href="/" className={cn('font-semibold text-primary')}>
               {siteConfig.author.name}
             </Link>
+          </div>
+          <div className={cn('flex items-center pb-2')}>
+            <div>All trademarks, logos and brand names used in this website are the property of their respective owners.</div>
           </div>
         </div>
       </Container>

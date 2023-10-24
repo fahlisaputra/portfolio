@@ -8,7 +8,7 @@ import Introductory from './components/introductory'
 import RecentPosts from './components/recent-posts'
 
 export const metadata: Metadata = seo({
-  title: 'Full-stack Engineer',
+  title: 'Fullstack Software Engineer from Banjarbaru',
   url: '/',
 })
 

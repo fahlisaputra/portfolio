@@ -21,6 +21,8 @@ import {
 import { Button, Container, Link, Tooltip } from '@/components/ui'
 import { ROUTES } from '@/data/app'
 import cn from '@/lib/cn'
+import Image from 'next/image'
+
 
 interface Stack {
   title: string
@@ -165,31 +167,56 @@ const HeaderTitle = () => {
   }
 
   return (
-    <div className={cn('relative')}>
-      <m.h1
-        className={cn(
-          'mb-4 flex flex-col justify-center gap-1 font-inter text-4xl font-black tracking-tight',
-          'sm:text-5xl',
-          'lg:text-6xl',
-        )}
-        initial={animation.hide}
-        animate={animation.show}
-        transition={{ delay: 0.1 }}
-      >
+    <div className={cn('relative lg:flex flex-row-reverse gap-52')}>
+      <div>
+        <Image
+          src="https://res.cloudinary.com/dyytaftx5/image/upload/v1698142861/awqpbwr7ibfbpqx7gk5v.png"
+          height={200}
+          width={200}
+          alt="Fahli Saputra"
+          style={{objectFit: "contain"}}
+        />
+      </div>
+      <div className={cn('md:flex-1')}>
+        <m.h1
+          className={cn(
+            'mb-4 flex flex-col justify-center gap-1 font-inter text-4xl font-black tracking-tight',
+            'sm:text-5xl',
+            'lg:text-6xl',
+          )}
+          initial={animation.hide}
+          animate={animation.show}
+          transition={{ delay: 0.1 }}
+        >
         <span>
-          Hi, I'm <span className={cn('text-primary')}>Bona Brian Siagian</span>
+          Hi, I'm <span className={cn('text-primary')}>Fahli Saputra 👋</span>
         </span>
-        <span>Fullstack Engineer</span>
-      </m.h1>
-      <m.p
-        className={cn('md:text-xl')}
-        initial={animation.hide}
-        animate={animation.show}
-        transition={{ delay: 0.2 }}
-      >
-        I like to build interactive things with code. I also talk and write
-        about those things.
-      </m.p>
+        </m.h1>
+        <m.h1
+          className={cn(
+            'mb-4 flex flex-col justify-center gap-1 font-inter text-xl font-black tracking-tight',
+            'sm:text-xl',
+            'lg:text-xl',
+          )}
+          initial={animation.hide}
+          animate={animation.show}
+          transition={{ delay: 0.1 }}
+        >
+        <span>
+          Fullstack Software Engineer
+        </span>
+        </m.h1>
+        <m.p
+          className={cn('md:text-xl')}
+          initial={animation.hide}
+          animate={animation.show}
+          transition={{ delay: 0.2 }}
+        >
+          <span>
+            Experienced in designing and developing software solutions in web, mobile or desktop platform. I'm passionate about building software that can help people and businesses to grow. Also certified as network engineer.
+          </span>
+        </m.p>
+      </div>
     </div>
   )
 }

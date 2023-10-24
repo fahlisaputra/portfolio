@@ -78,7 +78,7 @@ const CodingActivity = () => {
           <div className={cn('items-center')}>
             <span>My </span>
             <Link
-              href="https://wakatime.com/@bonabrian"
+              href="https://wakatime.com/@fahli"
               target="_blank"
               passHref
               className={cn('hover:underline')}

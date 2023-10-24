@@ -77,10 +77,10 @@ export const getAvailableDevices = async (): Promise<Device[]> => {
   )
 
   const devices = response?.devices?.map((device) => ({
-    name: device.name,
+    name: device.name == 'iPhone' ? 'Fahli\'s iPhone' : (device.name == 'vivo 1804' ? 'Fahli\'s Vivo' : device.name),
     is_active: device.is_active,
     type: device.type,
-    model: PAIR_DEVICES[device?.type]?.model ?? 'Unknown Device',
+    model: device.name == "vivo 1804" ? 'Android' : (PAIR_DEVICES[device?.type]?.model ?? 'Unknown Device'),
     id: PAIR_DEVICES[device?.type]?.id ?? 'bonabrian-device',
   }))
 

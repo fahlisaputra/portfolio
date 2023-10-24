@@ -121,7 +121,7 @@ const ShareButton = ({ slug }: ShareButtonProps) => {
                     <ShareItemLink
                       href={`https://twitter.com/intent/tweet?url=${encodeURIComponent(
                         currentUrl,
-                      )}&via=bonabrian_`}
+                      )}&via=fahlisptr`}
                       active={active}
                       onClick={() => handleItemClick('TWITTER')}
                     >
