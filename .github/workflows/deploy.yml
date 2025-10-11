@@ -1,20 +1,20 @@
 name: Vercel Deployment
 
 on:
-  push:
-    branches: [ "main" ]
+    push:
+        branches: ['main']
 
 jobs:
-  ping:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Trigger Vercel Deploy Hook
-        env:
-          VERCEL_HOOK_URL: ${{ secrets.VERCEL_HOOK_URL }}
-        run: |
-          for i in 1 2 3; do
-            echo "Triggering Vercel (attempt $i)..."
-            curl -fsS -X POST "$VERCEL_HOOK_URL" && exit 0
-            echo "Retrying in 5s..."; sleep 5
-          done
-          echo "Failed to trigger Vercel after 3 attempts"; exit 1
+    ping:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Trigger Vercel Deploy Hook
+              env:
+                  VERCEL_HOOK_URL: ${{ secrets.VERCEL_HOOK_URL }}
+              run: |
+                  for i in 1 2 3; do
+                    echo "Triggering Vercel (attempt $i)..."
+                    curl -fsS -X POST "$VERCEL_HOOK_URL" && exit 0
+                    echo "Retrying in 5s..."; sleep 5
+                  done
+                  echo "Failed to trigger Vercel after 3 attempts"; exit 1
