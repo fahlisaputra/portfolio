@@ -1,0 +1,58 @@
+---
+src: "/portfolio/smartdoorlock.webp"
+screenshot: "/screenshots/smartdoorlock-android.webp"
+category: "Mobile"
+platform: "mobile"
+status: "Private"
+title: "Smart Door Lock App"
+year: 2023
+location: "Malang, Indonesia"
+description: "Custom Android app to configure and control an IoT-based smart door lock powered by ESP8266 and RFID."
+longDescription: "An Android companion app developed to configure and manage an ESP8266-based IoT Smart Door Lock equipped with an RFID reader. The app handles Wi-Fi provisioning, device pairing, and real-time communication with the lock through WebSocket and Firebase integration, allowing users to manage access credentials and system configuration seamlessly."
+responsibility: "Android Developer"
+techStack:
+  - Java
+  - Firebase
+tags:
+  - API
+  - Retrofit
+  - WebSocket
+  - Internet of Things (IoT)
+---
+
+## Summary
+
+This Android app was developed as part of an **Internet of Things (IoT)** course project to accompany a custom-built **Smart Door Lock system** using **ESP8266** and an **RFID reader**.
+The app serves as a configuration and management interface for the hardware, allowing users to perform Wi-Fi setup, pairing, and RFID card registration directly from the mobile device.
+
+A **WebSocket server built with Node.js** facilitates real-time communication between the app and the ESP8266 module, while **Firebase** handles user authentication and device registration.
+
+
+## Problem
+
+Traditional door locks lack remote configurability and secure digital access management.
+During development, a key challenge was creating a seamless way to **pair and configure IoT hardware** without physical access or manual configuration through serial tools.
+The goal was to allow any user to set up and manage the smart door lock system intuitively using only their Android phone.
+
+## Goal / Use Case
+
+- Provide a **pairing and setup interface** for ESP8266-based smart door locks.
+- Automatically detect nearby devices through Wi-Fi scanning and “ping” tests to identify the target hardware.
+- Allow users to input network credentials and send them to the device for configuration.
+- Maintain a **WebSocket channel** to monitor setup progress and device readiness.
+- Support **RFID card registration** and management directly from the mobile app.
+- Ensure secure synchronization of device data and unique identifiers with Firebase.
+
+## Impact
+
+- Simplified the provisioning process for IoT smart locks — no need for manual setup or serial connections.
+- Enabled real-time communication between mobile, server, and IoT device through WebSocket and Firebase.
+- Allowed **RFID registration** and lock control directly from the Android app, improving usability and security.
+- Served as a complete demonstration of the IoT ecosystem (mobile, server, and embedded device integration).
+- Helped showcase practical IoT implementation for academic presentation and competition readiness.
+
+## Development Duration
+
+Developed over approximately **1 month** as part of the **Internet of Things** course project.
+Built using **Java**, **Firebase**, and **Node.js WebSocket** for the server communication layer.
+The hardware side utilized **ESP8266** with **RFID reader**, forming a fully connected smart door lock prototype.

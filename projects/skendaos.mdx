@@ -1,0 +1,66 @@
+---
+src: "/portfolio/skenda-os.webp"
+screenshot: "/screenshots/skendaos.webp"
+category: "Desktop"
+platform: "desktop"
+status: "Private"
+title: "SkendaOS"
+year: 2022
+location: "Indonesia"
+description: "Experimental operating system built with C# and .NET using CosmosOS kernel, featuring CLI interface, multi-user login, and FAT file system support."
+longDescription: "SkendaOS is an experimental operating system built on top of the CosmosOS kernel using C# and .NET. Designed for learning purposes, it provides a command-line interface (CLI) environment with core features such as file system management (FAT12, FAT16, FAT32), user authentication, DHCP/DNS configuration, and basic networking. The system showcases how high-level languages like C# can be used to develop low-level OS functionalities."
+responsibility: "Developer"
+techStack:
+  - C#
+  - C
+  - Assembly
+tags:
+  - Operating System
+  - Kernel
+  - File System
+  - Bootloader
+---
+
+## Summary
+
+**SkendaOS** is an **experimental operating system** developed using **C#** and **.NET**, built on top of the **CosmosOS kernel** — a framework that allows developers to create custom operating systems using managed code.
+The system features a **command-line interface (CLI)** with built-in utilities for managing users, files, and basic network settings.
+
+SkendaOS currently runs on **VMware**, supporting **FAT12**, **FAT16**, and **FAT32** file systems.
+It includes modules for **multi-user authentication**, **DHCP/DNS configuration**, and **network utilities** like PING and DNS lookup.
+
+## Problem
+
+Many developers never get the chance to explore how operating systems work internally due to the steep learning curve of low-level programming languages like C or Assembly.
+The goal of SkendaOS was to **bridge that gap** — by demonstrating how a high-level language such as C# (through CosmosOS) could still be used to design and understand kernel operations, file systems, and user management.
+
+## Goal / Use Case
+
+- Build an **educational and experimental OS** using CosmosOS as the base kernel.
+- Provide a functional **CLI interface** with command parsing and user authentication.
+- Implement file system operations supporting **FAT12**, **FAT16**, and **FAT32**.
+- Develop **network modules** for DHCP client configuration and DNS resolution.
+- Support **multi-user login**, **language settings**, and **custom nameserver** options.
+- Serve as a learning platform for exploring how .NET code interacts with low-level system components.
+
+## Impact
+
+- Demonstrated the capability of **C# and .NET** to operate at the system level using CosmosOS.
+- Helped deepen understanding of **kernel-layer communication**, file systems, and network stack design.
+- Provided a sandbox for experimenting with OS-level logic such as authentication, configuration management, and network connectivity.
+- Inspired exploration into using managed code for embedded and experimental operating system projects.
+
+## Development Duration
+
+Developed incrementally over several months as a personal research project.
+The latest version, **SkendaOS 1.6**, introduced major updates and improvements:
+
+- **[ADDED]** 6 new CLI commands: `adduser`, `dhcp`, `dns`, `language`, `passwd`, `rmuser`
+- **[FIXED]** Improved DHCP client reliability
+- **[ADDED]** DHCP renew and release functionality
+- **[ADDED]** Multi-user login system
+- **[ADDED]** Indonesian language support
+- **[ADDED]** Custom nameserver configuration
+- **[FIXED]** Stability improvements for PING and DNS lookup
+
+SkendaOS is designed to run on **VMware** using a **FAT32-formatted virtual disk image**, provided as a ready-to-use template.

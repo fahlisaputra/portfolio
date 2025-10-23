@@ -1,0 +1,54 @@
+---
+src: "/portfolio/file-crypt.webp"
+screenshot: "/screenshots/filecrypt.webp"
+category: "Desktop"
+platform: "desktop"
+status: "Private"
+title: "FileCrypt"
+year: 2023
+location: "Malang, Indonesia"
+description: "Windows desktop application for secure file encryption and integrity verification using custom hashing and metadata validation."
+longDescription: "FileCrypt is a desktop application built with C# and .NET that provides secure file encryption and integrity verification. It uses a custom encryption algorithm and embeds hash metadata to ensure files remain unaltered after decryption. Encrypted objects are wrapped in a ZIP container along with hash values for both pre- and post-encryption states, allowing authenticity checks during decryption."
+responsibility: ".NET Developer"
+techStack:
+  - C#
+tags:
+  - Cryptography
+  - File Encryption
+  - Data Integrity
+  - Cybersecurity
+---
+
+## Summary
+
+**FileCrypt** is a desktop application designed to securely **encrypt and verify file integrity** using a custom cryptographic algorithm.
+Each encrypted file is encapsulated into a **ZIP container** that stores both the encrypted data and **metadata** containing hash values computed before and after encryption.
+
+During decryption, FileCrypt validates these hashes to ensure that the file has not been modified or tampered with.
+If the decrypted content’s hash does not match the stored metadata, the file is flagged as **“broken”** or compromised.
+
+## Problem
+
+Sharing or storing sensitive files publicly often risks modification or corruption—either unintentionally or through tampering.
+While encryption protects confidentiality, it doesn’t inherently verify **data integrity**.
+There was a need for a lightweight tool that could **detect file tampering** while keeping the encryption workflow simple and self-contained.
+
+## Goal / Use Case
+
+- Develop a **standalone encryption utility** for Windows using **C# and .NET**.
+- Combine **encryption and file integrity verification** into one streamlined process.
+- Generate **hash metadata** before and after encryption, stored inside a ZIP container with the encrypted file.
+- During decryption, automatically compare the stored hash with the newly computed one to verify authenticity.
+- Provide clear feedback when a file is corrupted or altered after encryption.
+
+## Impact
+
+- Enabled users to **safely share encrypted files** without fear of silent tampering.
+- Simplified cryptographic workflows into a **single self-contained package**.
+- Reinforced understanding of **hashing, encryption algorithms, and metadata verification** in practical file protection.
+- Offered a lightweight yet effective solution for maintaining file authenticity in public or semi-trusted environments.
+
+## Development Duration
+
+Developed in approximately **1 weeks** using **C# and .NET** as a personal project focused on practical cryptography.
+The app demonstrates integration between **encryption algorithms**, **ZIP packaging**, and **hash-based verification** for file authenticity assurance.
